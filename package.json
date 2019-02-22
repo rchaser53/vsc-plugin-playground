@@ -1,33 +1,33 @@
 {
-  "name": "vsc-plugin-playground",
-  "version": "1.0.0",
-  "description": "",
+	"name": "vsc-plugin-playground",
+	"version": "1.0.0",
+	"description": "",
 	"main": "./extension.js",
 	"scripts": {
 		"postinstall": "node ./node_modules/vscode/bin/install"
 	},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rchaser53/vsc-plugin-playground.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rchaser53/vsc-plugin-playground/issues"
-  },
-  "homepage": "https://github.com/rchaser53/vsc-plugin-playground#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rchaser53/vsc-plugin-playground.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/rchaser53/vsc-plugin-playground/issues"
+	},
+	"homepage": "https://github.com/rchaser53/vsc-plugin-playground#readme",
 	"engines": {
 		"vscode": "^1.25.0"
 	},
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.rustfmt"
 	],
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"command": "extension.rustfmt",
+				"title": "rustfmt"
 			}
 		]
 	},
