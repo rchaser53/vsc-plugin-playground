@@ -1,37 +1,39 @@
 {
-	"name": "vsc-plugin-playground",
-	"version": "1.0.0",
-	"description": "",
-	"main": "./extension.js",
-	"scripts": {
-		"postinstall": "node ./node_modules/vscode/bin/install"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/rchaser53/vsc-plugin-playground.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/rchaser53/vsc-plugin-playground/issues"
-	},
-	"homepage": "https://github.com/rchaser53/vsc-plugin-playground#readme",
-	"engines": {
-		"vscode": "^1.25.0"
-	},
-	"activationEvents": [
-		"onCommand:extension.rustfmt"
-	],
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.rustfmt",
-				"title": "rustfmt"
-			}
-		]
-	},
-	"devDependencies": {
-		"vscode": "^1.1.22"
-	}
+  "name": "rustfmt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./extension.js",
+  "scripts": {
+    "prettier": "prettier  --write \"**/*.{md,js,json}\"",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rchaser53/vsc-plugin-playground.git"
+  },
+  "keywords": ["vscode-plugin"],
+  "author": "rchaser53",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rchaser53/vsc-plugin-playground/issues"
+  },
+  "homepage": "https://github.com/rchaser53/vsc-plugin-playground#readme",
+  "engines": {
+    "vscode": "^1.25.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.rustfmt"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.rustfmt",
+        "title": "rustfmt"
+      }
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4",
+    "vscode": "^1.1.30"
+  }
 }
